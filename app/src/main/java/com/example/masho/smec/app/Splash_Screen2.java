@@ -1,0 +1,33 @@
+package com.example.masho.smec.app;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.example.masho.smec.login.Login_Activity;
+import com.example.masho.smec.R;
+
+public class Splash_Screen2 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash__screen2);
+        final Thread mythread = new Thread()
+        {
+            @Override
+            public void run() {
+                try {
+                    sleep(3000);
+                    Intent i = new Intent(Splash_Screen2.this, Login_Activity.class);
+                    startActivity(i);
+                    overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+                    finish();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        mythread.start();
+    }
+}

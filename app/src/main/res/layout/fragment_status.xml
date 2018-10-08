@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SMEC is an acronym for Speed Mind Execution Competition which was an initiative Competition step for Sir Syed University of Engineering and Technology By Computer Science depaprtment and was first held in the year 2016 by the batch of 2013, Since it become more popular in the startup so it's organize every year by the computer science department to let the student check there skills in there respective fields or maybe to enjoy some Console games like Fifa and much more or maybe mind attractive games like Brain Games etc.There will be alot of fun and It'll be a great honour for us to have you as a part of SMEC."
+            android:singleLine="false"
+            android:textSize="20sp"
+            android:textColor="@color/TextColor"
+            android:textStyle="italic|bold"/>
+    </LinearLayout>
+</FrameLayout>
